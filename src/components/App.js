@@ -4,9 +4,9 @@ const App = () => {
 
   return (
     <div id="main">
-      <ol key={'relativeList'}>
+      <ol key={'#relativeList'}>
       {relativeList.map((item,idx )=> {
-        return <li key={`relativeListItem${idx+1}`}>{item}</li>
+        return <li key={`#relativeListItem${idx+1}`}>{item}</li>
       })}
       </ol>
     </div>

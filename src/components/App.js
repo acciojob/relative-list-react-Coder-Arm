@@ -1,9 +1,14 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+const relativeList = ["Dilbag","Ajit","Ajay","Pradeep"];
 const App = () => {
+
   return (
     <div id="main">
-               {/* Do not remove the main div */}
+      <ol>
+      {relativeList.map((item,idx )=> {
+        return <li key={`relativeListItem${idx+1}`}>{item}</li>
+      })}
+      </ol>
     </div>
   )
 }
